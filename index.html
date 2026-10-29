@@ -153,7 +153,7 @@ main{width:min(100% - 28px,1000px);margin:25px auto 50px}.intro{text-align:cente
       state.history=state.history.slice(0,5); renderHistory();
     } catch (error) {
       if (error.name==="AbortError") { setMessage("Test cancelled."); setStatus("CANCELLED"); }
-      else { setMessage(`Test failed: ${error.message}. Check your connection or retry; the test server may be blocked.`); setStatus("TEST ERROR"); }
+      else { setMessage(`Test failed: ${error.message}. Check your connection orr retry; the test server may be blocked.`); setStatus("TEST ERROR"); }
     } finally { state.running=false; $("start").disabled=false; $("reset").disabled=false; }
   }
   function renderHistory() {
